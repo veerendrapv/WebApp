@@ -1,0 +1,15 @@
+{%extends 'movies/base.html'%}
+{%block title%}Album Details{%endblock%}
+{%block body%}
+    <img src="{{album3.album_logo.url}}" style="width: 550px;">
+    <!--<img src="{{album2.album_logo}}" style="width: 250px;">-->
+
+    <h1>{{album3.album_title}}</h1>
+    <h2>{{album3.artist}}</h2>
+    {%for song in album3.song3s_set.all%}
+        {{song.song_title}}
+        {%if song.is_favorite%}
+        <img src="http://i.imgur.com/b9b13Rd.png"/>
+        {%endif%}
+    {%endfor%}
+{%endblock%}

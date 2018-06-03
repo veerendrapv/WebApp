@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>html template and render</h1>
+<h1>{{album}}</h1>
+{%if all_albums%}
+    {%for album in all_albums%}
+       <h1>{{album.artist}}</h1><br>
+        <h1>{{album}}</h1><br>
+    {%endfor%}
+{%else%}
+    <h3>nothing printed</h3>
+{%endif%}
+</body>
+</html>

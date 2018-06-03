@@ -1,0 +1,7 @@
+{%extends 'music/base.html' %}
+{%block title%}Album Details{%endblock%}
+{%block body%}
+{% for album in albums%}
+<h1>{{album.artist}}-{{album.album_title}}-{{album.genre}}</h1><br>
+{%endfor%}
+{%endblock%}

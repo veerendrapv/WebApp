@@ -1,0 +1,12 @@
+
+         <!--{%extends 'movies/base.html'%}
+{%block hello%}
+<ul>
+    {% for album in all_albums%}
+     <li>
+         <a href="{%url 'movies:detail' album.id%}">{{album.album_title}}</a>
+     </li>+
+    {%endfor%}
+</ul>
+{%endblock%}
+-->
